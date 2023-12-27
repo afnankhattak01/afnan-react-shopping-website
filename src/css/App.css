@@ -1,0 +1,62 @@
+/*root colors*/
+
+@import "utilities/utils.css";
+
+:root {
+    --primary: #EEBF00;
+    --secondary: #232B38;
+    --ternary: #6C6C6C;
+    --danger: #FE4545;
+    --pure: #FEFEFE;
+    --light: #F0F0F0;
+    --heaven: #FFFFFF;
+    --footer: #2D333F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.pre-header {
+    padding: 0.8rem 0;
+    background-color: var(--secondary);
+    color: var(--pure);
+
+}
+
+.pre-header .social-icons {
+    display: flex;
+    align-items: center;
+
+}
+
+.pre-header .social-icons a {
+    color: var(--pure);
+    margin-right: 1rem;
+}
+
+.pre-header .right-child-pre-header a {
+    color: var(--pure);
+    margin-right: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-right:  1rem;
+    border-right: 1px solid var(--pure);
+}
+.pre-header .right-child-pre-header a:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.pre-header .right-child-pre-header a .bi {
+    margin-right: 0.5rem;
+}
