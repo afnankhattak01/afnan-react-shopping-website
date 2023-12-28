@@ -109,7 +109,7 @@ section {
 /*container media queries end here */
 
 header.topbar {
-    padding: 1.5rem 0;
+    padding: 0.8rem 0;
     background-color: var(--secondary);
     color: var(--pure);
     font-family: "Raleway-SemiBold";
@@ -404,6 +404,10 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 
 }
 
+.topproducts .view-more-products-button {
+    font-family: "Raleway-medium";
+}
+
 .topproducts .view-more-products-button:hover {
 
     color: var(--secondary);
@@ -411,4 +415,142 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 
 .slick-dots {
     display: none !important;
+}
+
+
+.slick-next:before, .slick-prev:before {
+    color: var(--primary) !important;
+}
+
+/*fresh meals*/
+
+.freshmeals .fresh-meal-heading-section {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+
+.freshmeals .fresh-meal-heading-section h1 {
+    font-family: "Raleway-semibold";
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.freshmeals .fresh-meal-content-section {
+    gap: 1rem;
+}
+
+.freshmeals .fresh-meal-content-section .left {
+
+    margin-top: -50px;
+    flex: 1;
+
+}
+
+.freshmeals .fresh-meal-content-section .right {
+
+    margin-top: -40px;
+    flex: 1;
+
+}
+
+.freshmeals .fresh-meal-content-section .left img {
+    width: 85%;
+    height: auto;
+}
+
+.freshmeals .fresh-meal-content-section .right h2 {
+    font-family: "Raleway-bold";
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.freshmeals .fresh-meal-content-section .right p {
+    font-family: "Raleway-regular";
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin-bottom: 4rem;
+    color: var(--ternary);
+}
+
+/*our services section*/
+
+.ourservices {
+    background-color: var(--light);
+}
+
+.ourservices .ourservices-headings-section {
+
+    text-align: center;
+    margin-bottom: 6rem;
+
+}
+
+.ourservices .our-services-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+
+}
+
+
+.ourservices .our-services-cards-wrapper .card {
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 280px;
+    padding: 4rem 2rem 2rem 2rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    background-color: var(--pure);
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+
+.ourservices .our-services-cards-wrapper .card .card-header .card-title h3 {
+    font-family: "Raleway-bold";
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+.ourservices .our-services-cards-wrapper .card .card-body p {
+    font-family: "Raleway-semibold";
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--ternary);
+    line-height: 1.5rem;
+}
+
+
+.card-img-for-icons {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.ourservices .our-services-cards-wrapper .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+.ourservices .our-services-cards-wrapper .card.active  h3  {
+  color: var(--primary);
+
+}
+
+.ourservices .our-services-cards-wrapper .card.active  .btn {
+  background-color: var(--primary);
+  color: var(--heaven);
 }

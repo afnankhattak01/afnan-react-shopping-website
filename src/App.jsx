@@ -2,6 +2,8 @@ import Preheader from "./components/preheader.jsx";
 import Navigation from "./components/nav.jsx";
 import Heroheader from "./components/heroheader.jsx";
 import Products from "./components/products.jsx";
+import FreshMeal from "./components/freshmeal.jsx";
+import OurServices from "./components/ourservices.jsx";
 
 function App() {
 
@@ -21,6 +23,14 @@ function App() {
 
         <section className={"topproducts"}>
             <Products/>
+        </section>
+
+        <section className={"freshmeals"}>
+            <FreshMeal/>
+        </section>
+
+        <section className={"ourservices"}>
+            <OurServices/>
         </section>
     </div>)
 }
