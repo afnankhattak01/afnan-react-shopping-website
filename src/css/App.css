@@ -557,13 +557,11 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 
 /*weekly deals section*/
 .weeklydeals {
-    min-height: 450px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/images/food-table.jpg");
+    background-image: linear-gradient(rgba(35, 43, 56, 0.9), rgba(35, 43, 56, 0.9)), url("/images/food-table.jpg");
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom: 5rem;
 
 }
 
@@ -597,7 +595,7 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 .weeklydeals .time-boxes-wrapper div {
     max-width: 140px;
     width: 100%;
-    padding: 2.5rem 2rem;
+    height: 140px;
     border-radius: 0.2rem;
     text-align: center;
     font-family: "Raleway-bold";
@@ -619,11 +617,12 @@ header.hero .hero-items .hero-section-right-image .hero-img {
     font-family: "Raleway-SemiBold";
 }
 
-.weeklydeals .time-boxes-wrapper div .muted{
+.weeklydeals .time-boxes-wrapper div .muted {
     font-family: "Raleway-regular";
     font-size: 1rem;
     color: var(--light);
 }
+
 .weeklydeals .time-boxes-wrapper div:hover {
     background-color: var(--heaven);
     transform: translateY(-15px);
@@ -634,8 +633,142 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 .weeklydeals .time-boxes-wrapper div:hover h1 {
     color: var(--primary);
 }
+
 .weeklydeals .time-boxes-wrapper div:hover .muted {
     color: var(--secondary);
     font-family: "Raleway-semibold";
 
+}
+
+.blogs .our-blogs-heading-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.blogs .our-blogs-heading-section h1 {
+    font-family: "Raleway-semibold";
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.blogs .our-blogs-heading-section p {
+    font-family: "Raleway-semibold";
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--ternary);
+    line-height: 1.5rem;
+}
+
+
+.blogs .blogs-cards-wrapper {
+
+    gap: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+}
+
+.blogs .blogs-cards-wrapper .card {
+    flex: 1;
+    flex-basis: 300px;
+    max-width: 430px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+.blogs .blogs-cards-wrapper .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+
+}
+.blogs .blogs-cards-wrapper .card .card-content{
+    padding: 0.6rem 2rem 1.5rem 2rem;
+}
+.blogs .blogs-cards-wrapper .card .card-image img {
+    width: 100%;
+    height: auto;
+    background-color: var(--light);
+    margin-bottom: 1.6rem;
+
+}
+.blogs .blogs-cards-wrapper .card  .dates-postedby-comments-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway-regular";
+    color: var(--ternary);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.blogs .blogs-cards-wrapper .card .card-content h3{
+    font-family: "Raleway-bold";
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blogs .blogs-cards-wrapper .card .card-content  p {
+    line-height: 1.5rem;
+}
+
+.newsletter{
+    background-color: var(--primary);
+
+}
+.newsletter .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.newsletter .container .left , .newsletter .container .right{
+    flex: 1;
+}
+.newsletter .container .left {
+    text-align: end;
+}
+.newsletter .container .left img {
+    width: 85%;
+    height: auto;
+}
+
+.newsletter .container .right {
+    margin-top: -20px;
+}
+.newsletter .container .right h2{
+    margin-bottom: 1.5rem;
+    font-family: "Raleway-bold";
+}
+.newsletter .container .right p{
+    margin-bottom: 1.5rem;
+    font-family: "Raleway-medium";
+    line-height: 1.5rem;
+}
+.newsletter .container .right .input{
+    position: relative;
+}
+.newsletter .container .right .input input{
+    width: 100%;
+    padding: 1.3rem 1rem;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    font-family: "Raleway-medium";
+    font-size: 1rem;
+
+}
+
+.newsletter .container .right .input button{
+    position: absolute;
+    right: 10px;
+    top: 7px;
 }

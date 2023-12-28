@@ -5,6 +5,8 @@ import Products from "./components/products.jsx";
 import FreshMeal from "./components/freshmeal.jsx";
 import OurServices from "./components/ourservices.jsx";
 import WeeklyDeals from "./components/weekdeals.jsx";
+import Blogs from "./components/blogs.jsx";
+import Newsletter from "./components/newsletter.jsx";
 
 function App() {
 
@@ -37,8 +39,13 @@ function App() {
         <section className={"weeklydeals"}>
             <WeeklyDeals/>
         </section>
+        <section className={"blogs"}>
+            <Blogs/>
+        </section>
 
-
+        <section className={"newsletter"}>
+            <Newsletter/>
+        </section>
     </div>)
 }
 
