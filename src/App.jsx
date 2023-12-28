@@ -4,6 +4,7 @@ import Heroheader from "./components/heroheader.jsx";
 import Products from "./components/products.jsx";
 import FreshMeal from "./components/freshmeal.jsx";
 import OurServices from "./components/ourservices.jsx";
+import WeeklyDeals from "./components/weekdeals.jsx";
 
 function App() {
 
@@ -32,6 +33,12 @@ function App() {
         <section className={"ourservices"}>
             <OurServices/>
         </section>
+
+        <section className={"weeklydeals"}>
+            <WeeklyDeals/>
+        </section>
+
+
     </div>)
 }
 
