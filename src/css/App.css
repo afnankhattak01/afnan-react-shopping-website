@@ -78,6 +78,7 @@ section {
     .container {
         max-width: 540px;
     }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -94,6 +95,7 @@ section {
     .container {
         max-width: 960px;
     }
+
 
 }
 
@@ -685,13 +687,15 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 
 .blogs .blogs-cards-wrapper .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.3);
-    transform: translateY(-10px);
+    transform: translateY(-3px);
     transition: all 0.3s ease-in-out;
 
 }
-.blogs .blogs-cards-wrapper .card .card-content{
+
+.blogs .blogs-cards-wrapper .card .card-content {
     padding: 0.6rem 2rem 1.5rem 2rem;
 }
+
 .blogs .blogs-cards-wrapper .card .card-image img {
     width: 100%;
     height: auto;
@@ -699,7 +703,8 @@ header.hero .hero-items .hero-section-right-image .hero-img {
     margin-bottom: 1.6rem;
 
 }
-.blogs .blogs-cards-wrapper .card  .dates-postedby-comments-section {
+
+.blogs .blogs-cards-wrapper .card .dates-postedby-comments-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -709,32 +714,36 @@ header.hero .hero-items .hero-section-right-image .hero-img {
     margin-bottom: 1rem;
 }
 
-.blogs .blogs-cards-wrapper .card .card-content h3{
+.blogs .blogs-cards-wrapper .card .card-content h3 {
     font-family: "Raleway-bold";
     font-size: 1rem;
     margin-bottom: 1rem;
 }
 
-.blogs .blogs-cards-wrapper .card .card-content  p {
+.blogs .blogs-cards-wrapper .card .card-content p {
     line-height: 1.5rem;
 }
 
-.newsletter{
+.newsletter {
     background-color: var(--primary);
 
 }
+
 .newsletter .container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
-.newsletter .container .left , .newsletter .container .right{
+
+.newsletter .container .left, .newsletter .container .right {
     flex: 1;
 }
+
 .newsletter .container .left {
     text-align: end;
 }
+
 .newsletter .container .left img {
     width: 85%;
     height: auto;
@@ -743,19 +752,23 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 .newsletter .container .right {
     margin-top: -20px;
 }
-.newsletter .container .right h2{
+
+.newsletter .container .right h2 {
     margin-bottom: 1.5rem;
     font-family: "Raleway-bold";
 }
-.newsletter .container .right p{
+
+.newsletter .container .right p {
     margin-bottom: 1.5rem;
     font-family: "Raleway-medium";
     line-height: 1.5rem;
 }
-.newsletter .container .right .input{
+
+.newsletter .container .right .input {
     position: relative;
 }
-.newsletter .container .right .input input{
+
+.newsletter .container .right .input input {
     width: 100%;
     padding: 1.3rem 1rem;
     border-radius: 0.2rem;
@@ -767,8 +780,92 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 
 }
 
-.newsletter .container .right .input button{
+.newsletter .container .right .input button {
     position: absolute;
     right: 10px;
     top: 7px;
 }
+
+.contact-us-section-heading-class {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.contact-us-section-heading-class .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.contact-us-section-heading-class .contact-container .contact-form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+
+}
+
+.contact-us-section-heading-class .contact-container .contact-form-section .contact-div {
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.contact-us-section-heading-class .contact-container .contact-form-section .contact-div h3 {
+
+    margin-bottom: 0.5rem;
+    font-family: "Raleway-bold";
+    font-size: 1.2rem;
+
+
+}
+.contact-us-section-heading-class .contact-container .contact-form-section .contact-div h5 {
+
+    font-family: "Raleway-semibold";
+    font-size: 1rem;
+    letter-spacing: 0.055rem;
+    color: var(--ternary);
+
+}
+.contact-us-section-heading-class .contact-container .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+
+}
+
+.contact-us-section-heading-class .contact-container .right {
+    text-align: center;
+
+
+}
+
+.contact-us-section-heading-class .contact-container .left, .contact-us-section-heading-class .contact-container .right {
+    flex: 1;
+}
+
+
+.contact-us-section-heading-class .contact-heading-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-us-section-heading-class .contact-heading-section h1 {
+    font-family: "Raleway-semibold";
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+/*.contact .contact-heading-section p {*/
+/*    font-family: "Raleway-semibold";*/
+/*    font-size: 1rem;*/
+/*    margin-bottom: 1.5rem;*/
+/*    color: var(--ternary);*/
+/*    line-height: 1.5rem;*/
+/*}*/

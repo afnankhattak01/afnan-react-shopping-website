@@ -17,7 +17,6 @@ const Heroheader = () => {
                     <div className={"flex-buttons flex "}>
                         <button className={"btn btn-primary"}>Read More</button>
                         <button className={"btn btn-secondary"}>Shop Now</button>
-
                     </div>
                 </div>
             </div>

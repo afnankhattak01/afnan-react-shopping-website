@@ -7,6 +7,7 @@ import OurServices from "./components/ourservices.jsx";
 import WeeklyDeals from "./components/weekdeals.jsx";
 import Blogs from "./components/blogs.jsx";
 import Newsletter from "./components/newsletter.jsx";
+import Contactus from "./components/contactus.jsx";
 
 function App() {
 
@@ -43,8 +44,13 @@ function App() {
             <Blogs/>
         </section>
 
+
         <section className={"newsletter"}>
             <Newsletter/>
+        </section>
+
+        <section className={"contact-us-section-heading-class"}>
+            <Contactus/>
         </section>
     </div>)
 }
