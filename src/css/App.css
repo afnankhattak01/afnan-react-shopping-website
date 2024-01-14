@@ -835,7 +835,7 @@ header.hero .hero-items .hero-section-right-image .hero-img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 1rem;
 
 }
 
@@ -869,3 +869,106 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 /*    color: var(--ternary);*/
 /*    line-height: 1.5rem;*/
 /*}*/
+
+
+.social-links-section {
+    background-color: var(--footer);
+}
+
+.social-link-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.social-link-wrapper .social-links-flex-item {
+    flex: 1;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-link-wrapper .social-links-flex-item  .social-links-para{
+    color: var(--light);
+    line-height: 1.5rem;
+    margin-bottom: 1.6rem;
+    font-family: "Raleway-regular";
+
+}
+.social-link-wrapper .social-links-flex-item .social-links-heading{
+    font-family: "Raleway-bold";
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--heaven);
+}
+.social-link-wrapper .social-links-flex-item .social-links-ul{
+   text-align: center !important;
+
+}
+.social-link-wrapper .social-links-flex-item li{
+    list-style-type: none;
+    margin-bottom: 1.2rem;
+}
+
+.social-link-wrapper .social-links-flex-item li a span{
+    width: 7rem;
+    display: inline-block;
+    text-align: left;
+}
+.social-link-wrapper .social-links-flex-item li a{
+    color: var(--pure);
+    text-decoration: none;
+    font-family: "Raleway-regular";
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+    font-weight: 200;
+}
+.social-link-wrapper .social-links-flex-item li a:hover {
+    color: var(--primary);
+    transition: all 0.2s ease-in-out;
+}
+.social-links-hr{
+    border: 0.3px solid var(--primary);
+    margin-bottom: 2rem;
+}
+
+
+.social-link-wrapper .social-links-flex-item  .social-links-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.2rem;
+    background-color: var(--secondary);
+    color: var(--heaven);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.social-link-wrapper .social-links-flex-item  .bi {
+    margin-right: 1rem;
+}
+
+.social-link-wrapper .instagram-images-wrapper {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.social-link-wrapper .social-links-flex-item .instagram-images-wrapper div{
+    width: 28%;
+}
+
+.social-link-wrapper .social-links-flex-item .instagram-images-wrapper div img{
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: var(--secondary);
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--heaven);
+    font-family: "Raleway-regular";
+    font-size: 1rem;
+}
+.footer .afnan-khattak {
+    color: var(--primary);
+}

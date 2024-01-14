@@ -8,6 +8,8 @@ import WeeklyDeals from "./components/weekdeals.jsx";
 import Blogs from "./components/blogs.jsx";
 import Newsletter from "./components/newsletter.jsx";
 import Contactus from "./components/contactus.jsx";
+import Social from "./components/social.jsx";
+import Footer from "./components/footer.jsx";
 
 function App() {
 
@@ -52,6 +54,14 @@ function App() {
         <section className={"contact-us-section-heading-class"}>
             <Contactus/>
         </section>
+
+        <section className={"social-links-section"}>
+            <Social/>
+        </section>
+
+        <footer className={"footer"}>
+            <Footer/>
+        </footer>
     </div>)
 }
 
