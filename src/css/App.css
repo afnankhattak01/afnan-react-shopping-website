@@ -58,8 +58,14 @@ body {
 
 .pagewrapper {
     position: relative;
-}
+    transition : all 0.3s ease-in-out;
+    z-index: 5000;
 
+
+}
+.nav-icon{
+    display: none;
+}
 .container {
     max-width: 1152px;
     margin: 0 auto;
@@ -241,6 +247,7 @@ nav.navigation .top-child-container .info-div h6.semi-bold {
 /*hero secontion*/
 header.hero {
     background-image: url("/images/hero.png");
+    background-color: var(--pure);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
@@ -972,3 +979,86 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 .footer .afnan-khattak {
     color: var(--primary);
 }
+.sidebar{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1005;
+    background-color: var(--light);
+    transform: translateX(-100%);
+    transition : all 0.3s ease-in-out;
+
+
+}
+.sidebar .sidebar-content{
+    padding: 2rem 1rem;
+}
+
+
+.sidebar .sidebar-content .sidebar-header .hero-headings img{
+    width: 150px;
+    height: 150px;
+}
+.sidebar.active{
+    transform: translateX(0%);
+    transition : all 0.3s ease-in-out;
+
+}
+
+
+.pagewrapper.active{
+    transform: translateX(78%) scale(0.98);
+    transition : all 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+
+}
+
+
+  .sidebar  .sidebar-ul-item .sidebar-ul-item-li{
+
+        list-style-type: none;
+        margin-bottom: 1rem;
+    }
+
+.sidebar .hero-headings{
+    margin-bottom: 1rem;
+}
+.sidebar  .sidebar-ul-item .sidebar-ul-item-li a {
+    text-decoration: none;
+    color: var(--ternary);
+    font-family: "Raleway-semibold";
+}
+.sidebar  .sidebar-ul-item .sidebar-ul-item-li.active  a{
+    color: var(--primary);
+    transition: all 0.2s ease-in-out;
+}
+.sidebar  .sidebar-ul-item .sidebar-ul-item-li:hover a {
+    color: var(--primary);
+    transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width:992px){
+
+    header.topbar{
+        display: none;
+    }
+    .navigation {
+        display: none;
+
+    }
+
+
+    .nav-icon{
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        cursor: pointer;
+        z-index: 1004;
+    }
+}
+
+
