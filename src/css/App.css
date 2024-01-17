@@ -284,18 +284,18 @@ header.hero .hero-headings img {
 
 }
 
-header.hero .hero-text h1 {
+header.hero .hero-text-one h1 {
     font-family: "Raleway-black";
     margin-bottom: 1.3rem;
 
 
 }
 
-header.hero .hero-text p {
+header.hero .hero-text-one p {
     font-family: "Raleway-semibold";
     font-size: 1rem;
     margin-bottom: 1.3rem;
-    width: 30rem;
+    max-width: 30rem;
 
 
 }
@@ -599,7 +599,6 @@ header.hero .hero-items .hero-section-right-image .hero-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -1059,7 +1058,6 @@ header.hero .hero-items .hero-section-right-image .hero-img {
     transition: all 0.2s ease-in-out;
 }
 
-
 @media screen and (max-width: 992px) {
 
     header.topbar {
@@ -1099,7 +1097,7 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 
 
     .blogs .blogs-cards-wrapper .card {
-        flex: 0 1 45%;
+        flex: 0 1 47%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.2);
         cursor: pointer;
         transition: all 0.3s ease-in-out;
@@ -1107,21 +1105,45 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 
     }
 
+    .newsletter .container {
+        flex-direction: column;
+
+    }
+
+    .newsletter .container .left img {
+        width: 70%;
+    }
+
+    .newsletter .container .left {
+        text-align: center;
+    }
+    .contact-us-section-heading-class .contact-container{
+        flex-direction: column;
+
+    }
+    .contact-us-section-heading-class .contact-container .left, .contact-us-section-heading-class .contact-container .right{
+        width: 100%;
+    }
+
+    .contact-us-section-heading-class .contact-heading-section{
+        margin-bottom: 2rem;
+    }
 }
+
 
 @media screen  and (max-width: 768px) {
 
 
     header.hero .hero-items .hero-section-right-image .hero-img {
 
-        top: 110px;
+        top: 170px;
         left: 75%;
-        width: 220px;
+        width: 250px;
 
     }
 
     .ourservices .our-services-cards-wrapper .card {
-        flex: 0 1 100%;
+        flex: 0 1 95%;
     }
 
     .ourservices .our-services-cards-wrapper .card:nth-of-type(2) {
@@ -1147,7 +1169,7 @@ header.hero .hero-items .hero-section-right-image .hero-img {
         margin-bottom: 2rem;
     }
     .blogs .blogs-cards-wrapper .card {
-        flex: 0 1 100%;
+        flex: 0 1 85%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.2);
         cursor: pointer;
         transition: all 0.3s ease-in-out;
@@ -1155,18 +1177,56 @@ header.hero .hero-items .hero-section-right-image .hero-img {
 
     }
 
+    .social-link-wrapper{
+        flex-direction: column;
 
+    }
+    .social-link-wrapper .social-links-flex-item{
+        text-align: start;
+    }
+
+    .social-link-wrapper .social-links-flex-item .social-links-ul li{
+        text-align: start;
+    }
 }
 
 @media screen  and (max-width: 576px) {
+    header.hero .hero-headings h5 {
+        font-size: 1.1rem;
 
-
+    }
+        header.hero .hero-text-one h1{
+        font-size: 1.5rem;
+    }
+    header.hero .hero-text-one p{
+        font-size: 1.1rem;
+    }
     header.hero .hero-items .hero-section-right-image .hero-img {
 
-        top: 255px;
-        left: 70%;
-        width: 180px;
+        top: 235px;
+        left: 65%;
+        width: 220px;
 
     }
 
+    .flex-buttons .btn{
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    .weeklydeals .time-boxes-wrapper div{
+        max-width: 100px;
+        height: 100px;
+    }
+    .weeklydeals .time-boxes-wrapper div h1 {
+        font-size: 1.5rem;
+    }
+    .weeklydeals .time-boxes-wrapper div .muted {
+        font-size: 0.9rem;
+    }
+    .blogs .blogs-cards-wrapper .card {
+        flex: 0 1 95%;
+
+
+
+    }
 }

@@ -7,7 +7,7 @@ const Heroheader = () => {
                     <h5>Welcome to</h5>
                     <img src={"./icons/logo.svg"} alt={"logo"}/>
                 </div>
-                <div className={"hero-text"}>
+                <div className={"hero-text-one"}>
                     <h1>The Worlds Best <span className={"creative"}>Shopping </span> Website</h1>
                     <p>Savor culinary perfection on our website—where visuals meet seamless ordering for an
                         extraordinary
