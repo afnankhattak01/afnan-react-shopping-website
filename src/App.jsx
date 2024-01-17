@@ -75,9 +75,9 @@ function App() {
 
             </header>
 
-            <section className={"topproducts"}>
-                <Products/>
-            </section>
+            {/*<section className={"topproducts"}>*/}
+            {/*    <Products/>*/}
+            {/*</section>*/}
 
             <section className={"freshmeals"}>
                 <FreshMeal/>
